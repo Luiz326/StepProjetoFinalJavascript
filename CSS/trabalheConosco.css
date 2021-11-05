@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section h1{
+    text-align: center;
+    font-weight: 800;
+}
+header{
+    margin-bottom: -90px;
+}
+
+form{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(49, 49, 51);
+    border-radius: 6px;
+}
+
+
+div{
+    margin-top: 20px;
+   
+}
+div h2{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+label{
+    text-align: center;
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+     
+}
+textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+     
+}
+#div-form1{
+    margin-top: 0px;
+    margin-left:-220px;
+   
+}
+#div-form2{
+   margin-top: 0px;
+   margin-left:-250px;
+   
+}
+#div-form3{
+    margin-top: 0px;
+    margin-left: -170px;
+   }
+#div-form3 legend{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#div-form1 form{
+    min-height: 990px;
+}
+#div-form2 form{
+    min-height: 990px;
+}
+#div-form3 form{
+   min-height: 990px;
+}
+#div-form3 input{
+   margin: 0;
+   margin-bottom: -800px;
+}
+#escolaridade {
+    margin-top: 40px;
+    margin-left: -40px;
+    
+}
+div p{
+
+    margin-right: 20px;
+    text-align: right;
+
+}
+.input-estilizado{
+    border: none;
+    outline: none;
+    width: 300px;
+    padding-left: 6px;
+    border-radius: 6px;
+    line-height: 35px;
+    font-size: large;
+    border-bottom: 2px solid blanchedalmond;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: blanchedalmond;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: blanchedalmond;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.input-estilizado:focus{
+    background-color: blanchedalmond;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+span{
+    margin-left: 8px;
+}
+
+fieldset{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none;
+    margin-left: 40px;
+    color: blanchedalmond;
+}
+legend{
+    padding-top: 40px;
+    font-size: 30px;
+}
+legend p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+#interesseErro{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 120px;
+    margin-bottom: -50px;
+}
+#sexoErro{
+    text-align: center;
+    margin-left: 120px;
+}
+#numberErro{
+    text-align: center;
+    margin-left: 120px;
+}
+#complementoErro{
+    text-align: center;
+    margin-left: 120px;
+}
+#ufError{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 120px;
+}
+#escolaridadeErro{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-bottom: -60px;
+}
+
+
+
+span{
+    font-size: 25px;
+}
+
+select {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    color: goldenrod;
+   
+  }
+  
+  select:hover,
+  select:focus,
+  select:active,
+  select:checked {
+    color: gold;
+  }
+  
+  select option {
+    color: goldenrod;
+  }
+  
+  option[value=""][disabled] {
+    display: none;
+} 
+textarea{
+    width: 340px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    height: 355px;
+    font-size: 20px;
+    padding-left: 6px;
+    resize: none;
+    
+}
+
+
+textarea:focus{
+    background-color: blanchedalmond;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+aside img{
+    margin-top: 120px;
+       
+}
+#trabalho-imagem{
+    width:500px;
+    border-radius: 17px;
+    box-shadow: 30px 30px 20px black;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    margin-left: -320px;
+    font-size: 25px;
+    background-color: goldenrod;  
+    color: white;  
+    box-shadow: 4px 4px 4px black;
+}
+button:hover{
+    opacity: 0.8;
+    background-color: darkblue;
+    color: blanchedalmond;
+    transition: 1s;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+}

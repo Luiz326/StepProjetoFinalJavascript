@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:whitesmoke;
+}
+
+fieldset{
+    width: 750px;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    border:none;
+    border-radius: 6px;
+}
+label{
+    font-size: 22px;
+    color: goldenrod;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+}
+legend{
+    font-size: 24px;
+    color: goldenrod;
+    text-shadow: 2px 2px 2px black;
+}
+form h1{
+    font-size: 35px;
+    margin-left: 40px;
+    margin-top: 5%;
+    margin-bottom: 30px;
+    color: goldenrod;
+    text-shadow: 2px 2px 2px black;
+}
+
+input, textarea{
+    margin-top: 10px;
+    margin-left: 40px;
+    border: none;
+    padding: 4px;
+    font-size: 18px;
+    }
+input{
+    width: 670px;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    font-size: 26px;
+    padding-left: 10px;
+}
+textarea{
+    width: 670px;
+    height: 280px;
+    outline: none;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    resize: none;
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+input:focus, textarea:focus{
+    background-color: blanchedalmond;
+    color: black;
+    transition: 8ms;
+}
+
+div{
+   width: 30%;
+   margin-top: 30px;
+}
+button{
+    margin-bottom: 50px;
+    margin-left: 270px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 8ms;
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+}
+#nomeErro{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#emailErro{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#assuntoErro{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#textoErro{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+p{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 300px;
+    color: white;
+}
+
+
+
+
+header{
+    background-image:url("../Imagem/Hands-people-concert_2560x1920.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: contain;
+    background-repeat: inherit;
+    
+}
+header h1{
+    display: flex;
+    color: blanchedalmond;
+    padding-top: 250px;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    background-color:black;
+    color: blanchedalmond;
+    height: 100px;
+    width: 100%;
+    padding-right:150px;
+    bottom: 838px;
+
+}
+nav h1{
+    display: flex;
+    align-items: center;
+    margin-right: 600px;
+    
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+ul{
+    display: flex;
+       
+}
+li{
+    padding: 40px 0 0 30px;
+    list-style: none;
+    align-items: center;
+}
+span img{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+span img:hover{
+    cursor: pointer;
+}
+
+a:hover{
+    color: gold;
+    cursor: pointer;
+    transition: 4ms;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    padding-top: 150px
+    
+}

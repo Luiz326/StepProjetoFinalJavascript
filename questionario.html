@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/questionario.css">
+
+
+    <title>DJ Hiroshi</title>
+</head>
+
+<body>
+    <header>
+        <h1>QUESTIONÁRIO</h1>
+    </header>
+    <nav>
+        <h1>DJ HIROSHI</h1>
+        <ul>
+            <li><a href="index.html">SOBRE</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+            <li><a href="faleConosco.html">FALE CONOSCO</a></li>
+            <li><a href="trabalheConosco.html">TRABALHE CONOSCO</a> </li>
+
+        </ul>
+        <span><a target="blank" href="https://www.instagram.com/djhiroshitakano/"><img
+                    src="../Imagem/Instagram-Logo.wine.svg" alt=""></a></span>
+    </nav>
+
+    <main>
+        <section>
+            <div id="resultado" class="sem-modal">
+                <div id="content-modal">
+                    <div id="escolhas"></div>
+                 <div class="button-container">
+                    <p id="confirma">Confirma as escolhas?</p>
+                    <button onclick="confirmaResultado()">Sim</button>
+                    <button id="botao-cancelar" onclick="cancelaResultado()">Cancelar</button>
+                </div>
+                
+                </div>
+
+               
+
+            </div>
+
+            <div>
+                <h2>QUESTIONÁRIO</h2>
+
+            </div>
+            <h3>Não há resposta certa ou errada.</h3>
+            <form class="form-container">
+
+                <h4>1- Qual estilo musical você prefere?</h4>
+
+                <label><input type="radio" name="musica" id="funk" value="funk">
+                    FUNK</label><br>
+                <label><input type="radio" name="musica" id="hip-hop" value="hip-hop">
+                    HIP-HOP</label><br>
+                <label><input type="radio" name="musica" id="rock" value="rock">
+                    ROCK</label><br>
+                <label><input type="radio" name="musica" id="sertanejo" value="sertanejo">
+                    SERTANEJO</label><br>
+                <label><input type="radio" name="musica" id="pop" value="pop"> POP</label><br>
+                <label><input type="radio" name="musica" id="blues" value="blues">
+                    BLUES</label><br>
+                <label><input type="radio" name="musica" id="jazz" value="jazz">
+                    JAZZ</label><br>
+            </form class="form-container">
+           
+            <form class="form-container">
+                <h4>2- Qual a sua faixa etária?</h4>
+                <label><input type="radio" name="idade" id="dez" value="dez"> 10-19</label><br>
+                <label><input type="radio" name="idade" id="vinte" value="vinte">
+                    20-29</label><br>
+                <label><input type="radio" name="idade" id="trinta" value="trinta">
+                    30-39</label><br>
+                <label><input type="radio" name="idade" id="quarenta" value="quarenta">
+                    40-49</label><br>
+                <label><input type="radio" name="idade" id="maisDeCinquenta" value="maisDeCinquenta"> Mais de 50
+                    anos</label><br>
+            </form>
+            <form class="form-container">
+                <h4>3- Qual a região do Brasil que você mora?</h4>
+                <label><input type="radio" name="regiao" id="norte" value="norte">
+                    Norte</label><br>
+                <label><input type="radio" name="regiao" id="nordeste" value="nordeste">
+                    Nordeste</label><br>
+                <label><input type="radio" name="regiao" id="centroOeste" value="centroOeste">
+                    Centro-Oeste</label><br>
+                <label><input type="radio" name="regiao" id="sudeste" value="sudeste">
+                    Sudeste</label><br>
+                <label><input type="radio" name="regiao" id="sul" value="sul"> Sul</label><br>
+            </form>
+            <form class="form-container">
+                <h4>4- Você tem interesse em aprender a ser DJ um dia?</h4>
+                <label><input type="radio" name="interesse" id="sim" value="sim">
+                    Sim</label><br>
+                <label><input type="radio" name="interesse" id="talvez" value="talvez">
+                    Talvez</label><br>
+                <label><input type="radio" name="interesse" id="nao" value="nao">
+                    Não</label><br>
+            </form>
+            <form class="form-container">
+                <h4>5- Qual a frequência que você vai em uma balada?</h4>
+                <label><input type="radio" name="frequencia" id="uma" value="uma"> 1 vez por
+                    semana</label><br>
+                <label><input type="radio" name="frequencia" id="duas" value="duas"> 2 vezes por
+                    semana</label><br>
+                <label><input type="radio" name="frequencia" id="umaMes" value="umaMes"> 1 vez
+                    por mês</label><br>
+                <label><input type="radio" name="frequencia" id="todoDia" value="todoDia"> Todo
+                    dia</label><br>
+                <label><input type="radio" name="frequencia" id="semDiaCerto" value="semDiaCerto"> Não tenho dias certos
+                    vou quando tenho vontade</label><br>
+            </form>
+            
+            <div id="resposta" class="sem-modal" >
+                <button id="close" onclick="fecharResultado()">X</button>
+                <h4>Suas respostas foram</h4>
+                <p id="r1">Resposta 1</p>
+                <p id="r2">Resposta 2</p>
+                <p id="r3">Resposta 3</p>
+                <p id="r4">Resposta 4</p>
+                <p id="r5">Resposta 5</p>
+                
+            </div>
+
+            <button id="botao">ENVIAR</button>
+            
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <h2>DJ HIROSHI</h2>
+    </footer>
+    <script src="Javascript/questionario.js"></script>
+</body>
+
+</html>

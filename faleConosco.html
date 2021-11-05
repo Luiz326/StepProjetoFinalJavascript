@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="CSS/faleConosco.css">
+    <script src="Javascript/faleConosco.js"></script>
+    <title>DJ Hiroshi</title>
+</head>
+
+<body>
+    <header>
+        <h1>FALE CONOSCO</h1>
+    </header>
+    <nav>
+        <h1>DJ HIROSHI</h1>
+        <ul>
+            <li><a href="index.html">SOBRE</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+            <li><a href="faleConosco.html">FALE CONOSCO</a></li>
+            <li><a href="trabalheConosco.html">TRABALHE CONOSCO</a> </li>
+
+        </ul>
+        <span><a target="blank" href="https://www.instagram.com/djhiroshitakano/"><img src="../Imagem/Instagram-Logo.wine.svg" alt=""></a></span>
+    </nav>
+
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                   <h1> Dados</h1>
+                    <div>
+                        <label>Nome: <input id="nome" onblur="verificaNome()"></label>
+                        <p id="nomeErro"></p>
+                    </div>
+                    <div>
+                        <label>Email: <input type="email" id="email" onblur="verificaEmail()"></label>
+                        <p id="emailErro"></p>
+                    </div>
+                    <div>
+                        <label>Assunto: <input id="assunto" onblur="verificaAssunto()"></label>
+                        <p id="assuntoErro"></p>
+                    </div>
+                    <div>
+                        <label>Texto: <textarea name="texto" id="texto" onblur="verificaTexto()" onkeypress="verificaCaracter()"></textarea></label>
+                        <p id="textoErro">Máximo 250 caracteres</p>
+        
+                    </div>
+                    <button type="button">Enviar</button>
+                </fieldset>
+        
+        
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <h2>DJ HIROSHI</h2>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image:url("../Imagem/Hands-people-concert_2560x1920.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: contain;
+    background-repeat: inherit;
+    
+}
+header h1{
+    display: flex;
+    color: blanchedalmond;
+    padding-top: 250px;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    background-color:black;
+    color: blanchedalmond;
+    height: 100px;
+    width: 100%;
+    padding-right:150px;
+    bottom: 838px;
+
+}
+nav h1{
+    display: flex;
+    align-items: center;
+    margin-right: 600px;
+    
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+ul{
+    display: flex;
+       
+}
+li{
+    padding: 40px 0 0 30px;
+    list-style: none;
+    align-items: center;
+    height: 80px;
+}
+span img{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+span img:hover{
+    cursor: pointer;
+}
+
+a:hover{
+    color: gold;
+    cursor: pointer;
+    transition: 4ms;
+}
+section{
+    width: 600px;
+}
+section img{
+    display: flex;
+    width:400px;
+    border-radius: 17px;
+    box-shadow: 20px 20px 40px black;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 50px;
+}
+
+.container-carrosel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    margin: 20px;
+    padding-top: 50px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+ }
+
+.container-carrosel button{
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    background-color: blanchedalmond;
+    font-weight: 800;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+.container-carrosel button:hover{
+    transition: 900ms;
+    background-color: darkgoldenrod;
+    color: white;
+    cursor: pointer;
+}
+#tela{
+    object-fit: contain;
+    height: 500px;
+    width: 400px;
+}
+#texto{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 4px  black;
+}    
+main{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    padding-top: 150px
+    
+}

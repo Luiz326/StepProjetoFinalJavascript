@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/trabalheConosco.css">
+    <script src="Javascript/trabalheConosco.js"></script>
+    <title>DJ Hiroshi</title>
+</head>
+
+<body>
+    <header>
+        <h1>TRABALHE CONOSCO</h1>
+    </header>
+    <nav>
+        <h1>DJ HIROSHI</h1>
+        <ul>
+            <li><a href="index.html">SOBRE</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+            <li><a href="faleConosco.html">FALE CONOSCO</a></li>
+            <li><a href="trabalheConosco.html">TRABALHE CONOSCO</a> </li>
+
+        </ul>
+        <span><a target="blank" href="https://www.instagram.com/djhiroshitakano/"><img
+                    src="../Imagem/Instagram-Logo.wine.svg" alt=""></a></span>
+    </nav>
+
+    <main>
+        <section>
+
+            <div id="div-form1">
+
+                <form>
+                    <fieldset>
+                        <legend>Currículo</legend>
+                        <div>
+                            <label>Nome Completo: <br><input id="nome" class="input-estilizado" type="text"
+                                    onblur="verificaNome()"></label>
+                            <p id="nomeErro"></p>
+                        </div>
+
+                        <div>
+                            <label>Identidade:<br> <input id="identidade" class="input-estilizado" type="text"
+                                    onblur="verificaIdentidade()"></label>
+                            <p id="identidadeErro"></p>
+                        </div>
+                        <div>
+                            <label>CPF:<br> <input id="cpf" class="input-estilizado" type=" text"
+                                    onblur="verificaCPF()"></label>
+                            <p id="cpfErro"></p>
+                        </div>
+
+                        <div>
+                            <label>Telefone:<br> <input id="telefone" class="input-estilizado" type="tel"
+                                    onblur="verificarTelefone()"></label>
+                            <p id="telefoneErro"></p>
+                        </div>
+                        <div>
+                            <label>Celular:<br> <input id="celular" class="input-estilizado" type="tel"
+                                    onblur="verificarCelular()"></label>
+                            <p id="celularErro"></p>
+                        </div>
+                        <div>
+                            <label>E-mail:<br> <input id="email" class="input-estilizado" type="email"
+                                    onblur="verificaEmail()"></label>
+                            <p id="emailErro"></p>
+                        </div>
+                        <div>
+                            <label>Sexo: <input id="masculino" name="sexo" value="masculino" type="radio"
+                                    onclick="verificaSexo()"> <span>M</span> <input id="feminino" name="sexo"
+                                    value="feminino" type="radio" onclick="verificaSexo()"> <span>F</span></label>
+                            <p id="sexoErro"></p>
+                        </div>
+
+                </form>
+
+            </div>
+        </section>
+        <div id="div-form2">
+            <form>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço Completo</legend>
+                    <div>
+                        <label>Rua:<br> <input class="input-estilizado" type="text" id="rua"
+                                onblur="verificaRua()"></label>
+                        <p id="ruaErro"></p>
+                    </div>
+                    <div>
+                        <label>Número:<br> <input class="input-estilizado " type="number" id="number"
+                                onblur="verificaCampoVazioOuPreenchido('number')"></label>
+                        <p id="numberErro"></p>
+                    </div>
+                    <div>
+                        <label>Complemento:<br> <input id="complemento" class="input-estilizado" type="text"
+                                onblur="verificaCampoVazioOuPreenchido('complemento')"></label>
+                        <p id="complementoErro"></p>
+                    </div>
+                    <div>
+                        <label>Bairro: <br><input id="bairro" class="input-estilizado" type="text"
+                                onblur="verificaBairro()"></label>
+                        <p id="bairroErro"></p>
+                    </div>
+                    <div>
+                        <label>Cidade:<br> <input id="cidade" class="input-estilizado" type="text"
+                                onblur="verificaCidade()"></label>
+                        <p id="cidadeErro"></p>
+                    </div>
+                    <div>
+                        <label>UF:<br> <select id="uf" name="uf" onclick="selecionarUf() ">
+                                <option value="selecione" selected>Selecione</option>
+                                <option value="ac">AC</option>
+                                <option value="al">AL</option>
+                                <option value="ap">AP</option>
+                                <option value="am">AM</option>
+                                <option value="ba">BA</option>
+                                <option value="ce">CE</option>
+                                <option value="df">DF</option>
+                                <option value="es">ES</option>
+                                <option value="go">GO</option>
+                                <option value="ma">MA</option>
+                                <option value="mt">MT</option>
+                                <option value="ms">MS</option>
+                                <option value="mg">MG</option>
+                                <option value="pa">PA</option>
+                                <option value="pb">PB</option>
+                                <option value="pr">PR</option>
+                                <option value="pe">PE</option>
+                                <option value="pi">PI</option>
+                                <option value="rj">RJ</option>
+                                <option value="rn">RN</option>
+                                <option value="rs">RS</option>
+                                <option value="ro">RO</option>
+                                <option value="rr">RR</option>
+                                <option value="sc">SC</option>
+                                <option value="sp">SP</option>
+                                <option value="se">SE</option>
+                                <option value="to">TO</option>
+                            </select>
+
+                        </label>
+                        <p id="ufError"></p>
+
+                    </div>
+                    <div>
+                        <label>CEP:<br> <input id="cep" class="input-estilizado" type="text"
+                                onblur="verificaCep()"></label>
+                        <p id="cepErro"></p>
+                    </div>
+
+
+                </fieldset>
+
+            </form>
+        </div>
+        <div id="div-form3">
+            <form>
+                <fieldset>
+                    <legend>Escolaridade</legend>
+                    <label>
+                        <select select id="escolaridade" name="escolaridade" onclick="verificaEscolaridade() ">
+                            <option value="escolha"selected><p>Selecione</p></option>
+                            <option value="primeiroGrauCompleto"><p>1°grau Completo</p></option>
+                            <option value="segundoGrauCompleto"><p>2°grau Completo</p></option>
+                            <option value="terceiroGrauCompleto"><p>3°grau Completo</p></option>
+                            <option value="primeiroGrauIncompleto"><p>1°grau incompleto</p></option>
+                            <option value="segundoGrauIncompleto"><p>2°grau incompleto</p> </option>
+                            <option value="terceiroGrauIncompleto"><p>3°grau incompleto</p> </option>
+
+                        </select>
+
+                    </label>
+                    <p id="escolaridadeErro"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Area de interesse:</legend><br><input id="interesse" class="input-estilizado" type="text"
+                        onblur="verificaCampoVazioOuPreenchido('interesse')"></label>
+                    <p id="interesseErro"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fale um pouco mais de você:<legend><textarea id="texto" onblur="verificaTexto()"
+                                onkeypress="verificaCaracter()"></textarea>
+                            <p id="textoErro">Máximo 250 caracteres</p>
+                </fieldset>
+
+            </form>
+            <button type="button">Submit</button>
+        </div>
+    </main>
+    <footer>
+        <h2>DJ HIROSHI</h2>
+    </footer>
+
+</body>
+
+</html>
